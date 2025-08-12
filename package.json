@@ -1,8 +1,11 @@
 {
-  "devDependencies": {
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.864.0",
     "@prisma/client": "^6.13.0",
-    "prisma": "^6.13.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "dotenv": "^17.2.1",
+    "prisma": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1"
   }
 }
