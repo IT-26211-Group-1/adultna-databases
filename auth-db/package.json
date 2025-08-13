@@ -1,11 +1,33 @@
 {
+  "name": "@it-26211-group-1/auth-db",
+  "version": "1.0.0",
+  "main": "src/db/prisma.ts",
+  "types": "src/db/prisma.ts",
+  "files": [
+    "src/**/*",
+    "prisma/**/*"
+  ],
+  "prisma": {
+    "schema": "prisma/schema",
+    "seed": "ts-node -r dotenv/config prisma/seed.ts"
+  },
   "devDependencies": {
     "@prisma/client": "^6.13.0",
+    "@types/node": "^24.2.1",
+    "dotenv": "^17.2.1",
     "prisma": "^6.13.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
-  "prisna": {
-    "schema": "./prisma/schema/schema.prisma"
+  "scripts": {
+    "generate": "prisma generate --schema=./prisma/schema/schema.prisma",
+    "migrate:dev": "prisma migrate dev --schema=./prisma/schema/schema.prisma --name init",
+    "migrate:deploy": "prisma migrate deploy --schema=./prisma/schema/schema.prisma"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.864.0"
   }
 }
