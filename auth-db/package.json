@@ -2,11 +2,15 @@
   "dependencies": {
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
-    "mysql2": "^3.14.3"
+    "mysql2": "^3.14.3",
+    "@it-26211-group-1/adultna-lib-utils": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.20.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
