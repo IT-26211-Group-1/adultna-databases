@@ -1,7 +1,0 @@
-model Role {
-    roleId   Int        @id @default(autoincrement()) @map("role_id")
-    roleName String     @unique @map("role_name")
-    users    UserRole[]
-
-    @@map("roles")
-}
