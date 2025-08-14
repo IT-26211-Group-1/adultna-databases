@@ -3,9 +3,13 @@ import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
   out: "./drizzle",
-  schema: "./src/db",
+  schema: "./src/db/*.ts",
   dialect: "mysql",
   dbCredentials: {
-    url: process.env.DATABASE_URL!,
+    host: "127.0.0.1",
+    port: 3307,
+    user: "admin",
+    password: "lRAl&6VCI*848fU}lVYy9q;Xr]TSwM!.",
+    database: "auth_db",
   },
 });

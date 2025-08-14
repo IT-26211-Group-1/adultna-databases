@@ -1,9 +1,20 @@
 {
+  "name": "@it-26211-group-1/auth-db",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "src",
+    "drizzle",
+    "package.json"
+  ],
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "dependencies": {
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
-    "mysql2": "^3.14.3",
-    "@it-26211-group-1/adultna-lib-utils": "^1.0.0"
+    "mysql2": "^3.14.3"
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
