@@ -7,6 +7,7 @@ export const emailOtps = mysqlTable("email_otp", {
     .notNull()
     .references(() => users.id),
   otp: varchar("otp", { length: 6 }).notNull(),
+  sessionToken: varchar("session_token", { length: 36 }).notNull(),
   createdAt: timestamp("created_at").defaultNow(),
   expiresAt: timestamp("expires_at").notNull(),
 });
