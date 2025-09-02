@@ -1,11 +1,27 @@
-import { mysqlTable, int, timestamp } from "drizzle-orm/mysql-core";
+import { mysqlTable, timestamp, varchar, bigint } from "drizzle-orm/mysql-core";
 import { users } from "./users";
 import { onboardingQuestions } from "./onboardingQuestions";
 import { answerOptions } from "./answerOptions";
 
 export const userOnboardingResponse = mysqlTable("user_onboarding_response", {
-  userId: int("user_id").notNull().references(() => users.id),
-  questionId: int("question_id").notNull().references(() => onboardingQuestions.id),
-  optionId: int("option_id").notNull().references(() => answerOptions.id),
+  id: varchar("id", { length: 36 }).primaryKey(),
+  userId: varchar("user_id", { length: 36 })
+    .notNull()
+    .references(() => users.id, {
+      onDelete: "cascade",
+      onUpdate: "cascade",
+    }),
+  questionId: bigint("question_id", { mode: "number", unsigned: true })
+    .notNull()
+    .references(() => onboardingQuestions.id, {
+      onDelete: "cascade",
+      onUpdate: "cascade",
+    }),
+  optionId: bigint("option_id", { mode: "number", unsigned: true })
+    .notNull()
+    .references(() => answerOptions.id, {
+      onDelete: "cascade",
+      onUpdate: "cascade",
+    }),
   answeredAt: timestamp("answered_at").defaultNow(),
 });

@@ -1,6 +1,8 @@
-import { mysqlTable, serial, varchar } from "drizzle-orm/mysql-core";
+import { mysqlTable, serial, varchar, timestamp } from "drizzle-orm/mysql-core";
 
 export const outcomeTag = mysqlTable("outcome_tag", {
-  id: serial("tag_id").primaryKey(),
-  tag: varchar("tag", { length: 100 }).notNull(),
+  tag_id: serial("tag_id").primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
 });
