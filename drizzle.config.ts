@@ -2,7 +2,7 @@ import "dotenv/config";
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
-  out: "./drizzle",
+  out: "./src/drizzle/migrations",
   schema: "./src/db/*.ts",
   dialect: "mysql",
   dbCredentials: {
@@ -12,4 +12,6 @@ export default defineConfig({
     password: process.env.DB_PASSWORD!,
     database: process.env.DB_NAME!,
   },
+  verbose: true,
+  strict: true,
 });
