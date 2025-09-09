@@ -30,3 +30,5 @@ export { resumeSuggestions } from "./db/resumeSuggestions";
 export { sessionQuestions } from "./db/sessionQuestions";
 export { uploadedFiles } from "./db/uploadedFiles";
 export { userOnboardingResponse } from "./db/userOnboardingResponse";
+export { roadmap } from "./db/roadmap";
+export { milestones } from "./db/milestones";
