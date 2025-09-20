@@ -24,15 +24,12 @@ const rolesData = [
 ];
 
 export async function seedRoles() {
-  console.log("🌱 Starting roles seeder...");
-
   try {
     const db = await getDbConnection();
 
     const existingRoles = await db.select().from(roles);
 
     if (existingRoles.length > 0) {
-      console.log("Roles already exist, skipping seeding");
       return;
     }
 
@@ -48,7 +45,6 @@ export async function seedRoles() {
 async function main() {
   try {
     await seedRoles();
-    console.log("Roles seeding completed!");
     process.exit(0);
   } catch (error) {
     console.error("Roles seeding failed:", error);
