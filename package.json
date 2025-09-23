@@ -2,6 +2,9 @@
   "name": "@it-26211-group-1/database",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "seed": "tsx src/seeders/index.ts"
+  },
   "files": [
     "src",
     "drizzle",

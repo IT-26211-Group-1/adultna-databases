@@ -1,6 +1,10 @@
-import { mysqlTable, varchar, serial } from "drizzle-orm/mysql-core";
+import { mysqlTable, serial, mysqlEnum } from "drizzle-orm/mysql-core";
 
 export const roles = mysqlTable("roles", {
   id: serial("role_id").primaryKey(),
-  roleName: varchar("role_name", { length: 50 }).notNull().unique(),
+  roleName: mysqlEnum("role_name", [
+    "user",
+    "technical_admin",
+    "verifier_admin",
+  ]).default("user"),
 });

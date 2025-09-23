@@ -15,6 +15,20 @@
       "when": 1757425614253,
       "tag": "0001_left_ender_wiggin",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1758643588473,
+      "tag": "0002_workable_klaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1758644066423,
+      "tag": "0003_plain_norman_osborn",
+      "breakpoints": true
     }
   ]
 }
