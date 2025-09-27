@@ -36,6 +36,13 @@
       "when": 1758645054906,
       "tag": "0004_curved_silver_sable",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1758980895730,
+      "tag": "0005_closed_preak",
+      "breakpoints": true
     }
   ]
 }
