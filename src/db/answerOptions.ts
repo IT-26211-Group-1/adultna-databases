@@ -25,5 +25,5 @@ export const answerOptions = mysqlTable("answer_options", {
   }),
   optionText: varchar("option_text", { length: 255 }).notNull(),
   createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow().onUpdateNow(),
 });

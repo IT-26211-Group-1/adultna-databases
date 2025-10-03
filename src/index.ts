@@ -20,6 +20,7 @@ export { jobRole } from "./db/jobRole";
 export { loginAttempts } from "./db/loginAttempts";
 export { mockQuestions } from "./db/mockQuestions";
 export { onboardingQuestions } from "./db/onboardingQuestions";
+export { reviews } from "./db/reviews";
 export { outcomeTag } from "./db/outcomeTag";
 export { reports } from "./db/reports";
 export { reportStatus } from "./db/reportStatus";

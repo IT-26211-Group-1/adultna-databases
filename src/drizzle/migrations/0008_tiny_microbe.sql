@@ -1,0 +1,1 @@
+ALTER TABLE `reviews` MODIFY COLUMN `question_id` bigint unsigned NOT NULL;

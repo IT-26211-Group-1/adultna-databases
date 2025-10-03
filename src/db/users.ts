@@ -14,5 +14,5 @@ export const users = mysqlTable("users", {
   lastLogin: timestamp("last_login").defaultNow(),
   status: varchar("status", { length: 50 }).default("active"),
   createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow().onUpdateNow(),
 });
