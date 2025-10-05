@@ -3,6 +3,7 @@ import {
   varchar,
   boolean,
   timestamp,
+  mysqlEnum,
 } from "drizzle-orm/mysql-core";
 
 export const users = mysqlTable("users", {
