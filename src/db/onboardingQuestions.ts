@@ -14,6 +14,7 @@ export const onboardingQuestions = mysqlTable("onboarding_questions", {
   status: mysqlEnum("status", ["pending", "accepted", "rejected", "to_revise"])
     .default("pending")
     .notNull(),
+  reason: varchar("reason", { length: 255 }),
   createdBy: varchar("created_by", { length: 36 }).references(() => users.id),
   updatedBy: varchar("updated_by", { length: 36 }).references(() => users.id),
   deletedBy: varchar("deleted_by", { length: 36 }).references(() => users.id),
