@@ -33,3 +33,4 @@ export { uploadedFiles } from "./db/uploadedFiles";
 export { userOnboardingResponse } from "./db/userOnboardingResponse";
 export { roadmap } from "./db/roadmap";
 export { milestones } from "./db/milestones";
+export { fileboxFiles } from "./db/fileboxFiles";
