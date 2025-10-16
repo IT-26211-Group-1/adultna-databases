@@ -85,6 +85,13 @@
       "when": 1760630329375,
       "tag": "0011_heavy_aqueduct",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1760634295633,
+      "tag": "0012_lethal_namor",
+      "breakpoints": true
     }
   ]
 }

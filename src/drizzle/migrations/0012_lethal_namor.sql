@@ -1,0 +1,1 @@
+ALTER TABLE `filebox_files` DROP COLUMN `encrypted_file_name`;

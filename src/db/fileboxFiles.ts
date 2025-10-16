@@ -10,7 +10,6 @@ export const fileboxFiles = mysqlTable("filebox_files", {
   id: varchar("id", { length: 36 }).primaryKey(),
   userId: varchar("user_id", { length: 36 }).notNull(),
   fileName: varchar("file_name", { length: 255 }).notNull(),
-  encryptedFileName: varchar("encrypted_file_name", { length: 512 }).notNull(),
   fileKey: varchar("file_key", { length: 512 }).notNull(),
   category: varchar("category", { length: 50 }).notNull(),
   contentType: varchar("content_type", { length: 100 }).notNull(),
