@@ -1,0 +1,1 @@
+ALTER TABLE `uploaded_files` MODIFY COLUMN `s3_url` varchar(1024) NOT NULL;
