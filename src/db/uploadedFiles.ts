@@ -4,6 +4,7 @@ import {
   timestamp,
   bigint,
   int,
+  boolean,
 } from "drizzle-orm/mysql-core";
 import { fileboxFolders } from "./fileboxFolders";
 
@@ -17,6 +18,7 @@ export const uploadedFiles = mysqlTable("uploaded_files", {
   s3Url: varchar("s3_url", { length: 1024 }).notNull(),
   mimeType: varchar("mime_type", { length: 100 }).notNull(),
   fileSize: bigint("file_size", { mode: "number" }),
+  isSecure: boolean("is_secure").default(false).notNull(),
   uploadedAt: timestamp("uploaded_at").defaultNow().notNull(),
   version: int("version").default(1),
 });

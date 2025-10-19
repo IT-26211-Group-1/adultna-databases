@@ -4,6 +4,7 @@ import {
   timestamp,
   bigint,
   int,
+  boolean,
 } from "drizzle-orm/mysql-core";
 
 export const fileboxFiles = mysqlTable("filebox_files", {
@@ -14,6 +15,7 @@ export const fileboxFiles = mysqlTable("filebox_files", {
   category: varchar("category", { length: 50 }).notNull(),
   contentType: varchar("content_type", { length: 100 }).notNull(),
   fileSize: bigint("file_size", { mode: "number" }).notNull(),
+  isSecure: boolean("is_secure").default(false).notNull(),
   uploadDate: timestamp("upload_date").defaultNow().notNull(),
   lastModified: timestamp("last_modified").defaultNow().notNull(),
   version: int("version").default(1),

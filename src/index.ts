@@ -3,6 +3,7 @@ export { userProfile } from "./db/userProfile";
 export { userRoles } from "./db/userRoles";
 export { users } from "./db/users";
 export { emailOtps } from "./db/emailOtps";
+export { documentOtps } from "./db/documentOtps";
 export { aiInteractions } from "./db/aiInteractions";
 export { answerOptions } from "./db/answerOptions";
 export { auditLogs } from "./db/auditLogs";
