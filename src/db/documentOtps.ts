@@ -1,4 +1,4 @@
-import { mysqlTable, varchar, timestamp } from "drizzle-orm/mysql-core";
+import { mysqlTable, varchar, timestamp, mysqlEnum } from "drizzle-orm/mysql-core";
 import { users } from "./users";
 import { uploadedFiles } from "./uploadedFiles";
 
@@ -12,6 +12,7 @@ export const documentOtps = mysqlTable("document_otp", {
     .notNull()
     .references(() => uploadedFiles.id, { onDelete: "cascade" }),
   otp: varchar("otp", { length: 6 }).notNull(),
+  action: mysqlEnum("action", ["preview", "download", "delete"]).notNull().default("download"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   expiresAt: timestamp("expires_at").notNull(),
 });

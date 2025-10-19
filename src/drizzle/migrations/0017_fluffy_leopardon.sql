@@ -1,0 +1,1 @@
+ALTER TABLE `document_otp` ADD `action` enum('preview','download','delete') DEFAULT 'download' NOT NULL;
