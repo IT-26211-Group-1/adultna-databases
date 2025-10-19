@@ -127,6 +127,20 @@
       "when": 1760846951357,
       "tag": "0017_fluffy_leopardon",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "5",
+      "when": 1760881180830,
+      "tag": "0018_fluffy_molly_hayes",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "5",
+      "when": 1760881599315,
+      "tag": "0019_lowly_celestials",
+      "breakpoints": true
     }
   ]
 }

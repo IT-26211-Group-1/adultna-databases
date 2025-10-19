@@ -16,6 +16,7 @@ export { fileboxFolders } from "./db/fileboxFolders";
 export { governmentProcessGuides } from "./db/governmentProcessGuides";
 export { governmentRequirements } from "./db/governmentRequirements";
 export { interviewAnswers } from "./db/interviewAnswers";
+export { interviewQuestions } from "./db/interviewQuestions";
 export { interviewSession } from "./db/interviewSession";
 export { jobRole } from "./db/jobRole";
 export { loginAttempts } from "./db/loginAttempts";
