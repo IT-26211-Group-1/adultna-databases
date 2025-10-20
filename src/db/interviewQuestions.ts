@@ -25,8 +25,10 @@ export const interviewQuestions = mysqlTable("interview_questions", {
     .notNull()
     .references(() => users.id),
   updatedBy: varchar("updated_by", { length: 36 }).references(() => users.id),
+  deletedBy: varchar("deleted_by", { length: 36 }).references(() => users.id),
 
   // Timestamps
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().onUpdateNow().notNull(),
+  deletedAt: timestamp("deleted_at"),
 });

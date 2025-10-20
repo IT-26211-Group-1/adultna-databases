@@ -141,6 +141,13 @@
       "when": 1760881599315,
       "tag": "0019_lowly_celestials",
       "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "5",
+      "when": 1760973524468,
+      "tag": "0020_left_blackheart",
+      "breakpoints": true
     }
   ]
 }
