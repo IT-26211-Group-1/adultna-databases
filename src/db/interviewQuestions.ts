@@ -19,6 +19,7 @@ export const interviewQuestions = mysqlTable("interview_questions", {
   status: mysqlEnum("status", ["approved", "rejected", "pending", "to_revise"])
     .notNull()
     .default("pending"),
+  reason: varchar("reason", { length: 255 }),
 
   // Admin tracking
   createdBy: varchar("created_by", { length: 36 })

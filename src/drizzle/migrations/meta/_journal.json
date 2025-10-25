@@ -148,6 +148,13 @@
       "when": 1760973524468,
       "tag": "0020_left_blackheart",
       "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "5",
+      "when": 1761414854727,
+      "tag": "0021_plain_sway",
+      "breakpoints": true
     }
   ]
 }

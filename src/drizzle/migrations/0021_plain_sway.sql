@@ -1,0 +1,1 @@
+ALTER TABLE `interview_questions` ADD `reason` varchar(255);
