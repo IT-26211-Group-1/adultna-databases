@@ -15,6 +15,7 @@ export const interviewQuestions = mysqlTable("interview_questions", {
     "technical",
     "situational",
   ]).notNull(),
+  industry: varchar("industry", { length: 255 }),
   source: mysqlEnum("source", ["ai", "manual"]).notNull(),
   status: mysqlEnum("status", ["approved", "rejected", "pending", "to_revise"])
     .notNull()
