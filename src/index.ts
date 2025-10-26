@@ -37,4 +37,3 @@ export { roadmap } from "./db/roadmap";
 export { milestones } from "./db/milestones";
 export { fileboxFiles } from "./db/fileboxFiles";
 export { conversations } from "./db/conversations";
-export { messages } from "./db/messages";
