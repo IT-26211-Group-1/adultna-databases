@@ -17,6 +17,7 @@ export { governmentProcessGuides } from "./db/governmentProcessGuides";
 export { governmentRequirements } from "./db/governmentRequirements";
 export { interviewAnswers } from "./db/interviewAnswers";
 export { interviewQuestions } from "./db/interviewQuestions";
+export { interviewQuestionJobRoles } from "./db/interviewQuestionJobRoles";
 export { interviewSession } from "./db/interviewSession";
 export { jobRole } from "./db/jobRole";
 export { loginAttempts } from "./db/loginAttempts";

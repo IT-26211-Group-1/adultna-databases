@@ -197,6 +197,20 @@
       "when": 1761724438526,
       "tag": "0027_left_devos",
       "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "5",
+      "when": 1761739216265,
+      "tag": "0028_foamy_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "5",
+      "when": 1761739329456,
+      "tag": "0029_good_speedball",
+      "breakpoints": true
     }
   ]
 }
