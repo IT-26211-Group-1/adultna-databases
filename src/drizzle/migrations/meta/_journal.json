@@ -176,6 +176,20 @@
       "when": 1761491560264,
       "tag": "0024_modern_bug",
       "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "5",
+      "when": 1761624072270,
+      "tag": "0025_confused_doctor_spectrum",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "5",
+      "when": 1761645798253,
+      "tag": "0026_sudden_makkari",
+      "breakpoints": true
     }
   ]
 }

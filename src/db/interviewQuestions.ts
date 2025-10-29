@@ -6,6 +6,7 @@ import {
   text,
 } from "drizzle-orm/mysql-core";
 import { users } from "./users";
+import { jobRole } from "./jobRole";
 
 export const interviewQuestions = mysqlTable("interview_questions", {
   id: varchar("id", { length: 36 }).primaryKey(),
@@ -14,8 +15,12 @@ export const interviewQuestions = mysqlTable("interview_questions", {
     "behavioral",
     "technical",
     "situational",
+    "background",
   ]).notNull(),
   industry: varchar("industry", { length: 255 }),
+  jobRoleId: varchar("job_role_id", { length: 36 }).references(
+    () => jobRole.id
+  ),
   source: mysqlEnum("source", ["ai", "manual"]).notNull(),
   status: mysqlEnum("status", ["approved", "rejected", "pending", "to_revise"])
     .notNull()

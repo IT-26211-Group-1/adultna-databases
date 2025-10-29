@@ -1,0 +1,2 @@
+ALTER TABLE `interview_questions` ADD `job_role_id` varchar(36);--> statement-breakpoint
+ALTER TABLE `interview_questions` ADD CONSTRAINT `interview_questions_job_role_id_job_role_id_fk` FOREIGN KEY (`job_role_id`) REFERENCES `job_role`(`id`) ON DELETE no action ON UPDATE no action;
