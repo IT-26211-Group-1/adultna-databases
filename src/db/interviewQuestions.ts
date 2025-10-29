@@ -18,9 +18,7 @@ export const interviewQuestions = mysqlTable("interview_questions", {
     "background",
   ]).notNull(),
   industry: varchar("industry", { length: 255 }),
-  jobRoleId: varchar("job_role_id", { length: 36 }).references(
-    () => jobRole.id
-  ),
+  jobRole: varchar("job_role", { length: 255 }),
   source: mysqlEnum("source", ["ai", "manual"]).notNull(),
   status: mysqlEnum("status", ["approved", "rejected", "pending", "to_revise"])
     .notNull()
