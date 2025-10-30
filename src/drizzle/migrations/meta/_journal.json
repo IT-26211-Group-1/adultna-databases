@@ -211,6 +211,13 @@
       "when": 1761739329456,
       "tag": "0029_good_speedball",
       "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "5",
+      "when": 1761801488309,
+      "tag": "0030_cultured_adam_destine",
+      "breakpoints": true
     }
   ]
 }
