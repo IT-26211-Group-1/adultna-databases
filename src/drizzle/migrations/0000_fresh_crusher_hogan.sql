@@ -293,8 +293,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 	CONSTRAINT `users_email_unique` UNIQUE(`email`)
 );
 --> statement-breakpoint
-ALTER TABLE `ai_interactions` ADD CONSTRAINT `ai_interactions_user_id_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint
-ALTER TABLE `ai_interactions` ADD CONSTRAINT `ai_interactions_feature_id_features_id_fk` FOREIGN KEY (`feature_id`) REFERENCES `features`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE `answer_options` ADD CONSTRAINT `answer_options_question_id_onboarding_questions_id_fk` FOREIGN KEY (`question_id`) REFERENCES `onboarding_questions`(`id`) ON DELETE cascade ON UPDATE cascade;--> statement-breakpoint
 ALTER TABLE `answer_options` ADD CONSTRAINT `answer_options_outcome_tag_id_outcome_tag_tag_id_fk` FOREIGN KEY (`outcome_tag_id`) REFERENCES `outcome_tag`(`tag_id`) ON DELETE set null ON UPDATE cascade;--> statement-breakpoint
 ALTER TABLE `audit_logs` ADD CONSTRAINT `audit_logs_user_id_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint

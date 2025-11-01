@@ -6,7 +6,6 @@ import {
   text,
 } from "drizzle-orm/mysql-core";
 import { users } from "./users";
-import { jobRole } from "./jobRole";
 
 export const interviewQuestions = mysqlTable("interview_questions", {
   id: varchar("id", { length: 36 }).primaryKey(),
