@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "e7419772-9317-4335-aacf-0254053065d3",
+  "id": "8bd1cb17-fa71-4950-9df7-de5f8921e236",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "ai_interactions": {
@@ -1486,6 +1486,13 @@
     "question_job_roles": {
       "name": "question_job_roles",
       "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": true
+        },
         "question_id": {
           "name": "question_id",
           "type": "varchar(36)",
@@ -1531,15 +1538,22 @@
         }
       },
       "compositePrimaryKeys": {
-        "question_job_roles_question_id_job_role_id_pk": {
-          "name": "question_job_roles_question_id_job_role_id_pk",
+        "question_job_roles_id": {
+          "name": "question_job_roles_id",
+          "columns": [
+            "id"
+          ]
+        }
+      },
+      "uniqueConstraints": {
+        "question_job_roles_question_id_job_role_id_unique": {
+          "name": "question_job_roles_question_id_job_role_id_unique",
           "columns": [
             "question_id",
             "job_role_id"
           ]
         }
       },
-      "uniqueConstraints": {},
       "checkConstraint": {}
     },
     "interview_questions": {

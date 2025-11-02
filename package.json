@@ -1,9 +1,12 @@
 {
   "name": "@it-26211-group-1/database",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "type": "module",
   "scripts": {
-    "seed": "tsx src/seeders/index.ts"
+    "seed": "tsx src/seeders/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/migrate.ts",
+    "db:check": "drizzle-kit check"
   },
   "files": [
     "src",

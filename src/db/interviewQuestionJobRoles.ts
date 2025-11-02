@@ -1,10 +1,11 @@
-import { mysqlTable, varchar, primaryKey } from "drizzle-orm/mysql-core";
+import { mysqlTable, varchar, serial, unique } from "drizzle-orm/mysql-core";
 import { interviewQuestions } from "./interviewQuestions";
 import { jobRole } from "./jobRole";
 
 export const interviewQuestionJobRoles = mysqlTable(
   "question_job_roles",
   {
+    id: serial("id").primaryKey(),
     questionId: varchar("question_id", { length: 36 })
       .notNull()
       .references(() => interviewQuestions.id, {
@@ -20,7 +21,7 @@ export const interviewQuestionJobRoles = mysqlTable(
   },
   (table) => {
     return {
-      pk: primaryKey({ columns: [table.questionId, table.jobRoleId] }),
+      uniqueQuestionRole: unique().on(table.questionId, table.jobRoleId),
     };
   }
 );

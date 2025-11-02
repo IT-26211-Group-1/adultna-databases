@@ -187,9 +187,11 @@ CREATE TABLE `interview_answers` (
 );
 --> statement-breakpoint
 CREATE TABLE `question_job_roles` (
+	`id` serial AUTO_INCREMENT NOT NULL,
 	`question_id` varchar(36) NOT NULL,
 	`job_role_id` varchar(36) NOT NULL,
-	CONSTRAINT `question_job_roles_question_id_job_role_id_pk` PRIMARY KEY(`question_id`,`job_role_id`)
+	CONSTRAINT `question_job_roles_id` PRIMARY KEY(`id`),
+	CONSTRAINT `question_job_roles_question_id_job_role_id_unique` UNIQUE(`question_id`,`job_role_id`)
 );
 --> statement-breakpoint
 CREATE TABLE `interview_questions` (
