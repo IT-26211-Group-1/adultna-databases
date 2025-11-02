@@ -1,1 +1,0 @@
-ALTER TABLE `government_process_guides` MODIFY COLUMN `updated_by` varchar(36);

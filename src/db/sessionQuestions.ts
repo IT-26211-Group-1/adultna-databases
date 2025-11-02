@@ -6,10 +6,16 @@ export const sessionQuestions = mysqlTable("session_questions", {
   id: varchar("id", { length: 36 }).primaryKey(),
   sessionId: varchar("session_id", { length: 36 })
     .notNull()
-    .references(() => interviewSession.id),
+    .references(() => interviewSession.id, {
+      onDelete: "cascade",
+      onUpdate: "no action",
+    }),
   questionId: varchar("question_id", { length: 36 })
     .notNull()
-    .references(() => interviewQuestions.id),
+    .references(() => interviewQuestions.id, {
+      onDelete: "cascade",
+      onUpdate: "no action",
+    }),
   order: int("order").notNull(),
   isGeneral: int("is_general").notNull().default(0), // 1 for general, 0 for role-specific
   createdAt: timestamp("created_at").defaultNow().notNull(),

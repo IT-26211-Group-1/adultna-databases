@@ -1,1 +1,0 @@
-ALTER TABLE `interview_questions` MODIFY COLUMN `category` enum('behavioral','technical','situational','background') NOT NULL;

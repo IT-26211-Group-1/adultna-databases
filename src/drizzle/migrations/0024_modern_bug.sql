@@ -1,1 +1,0 @@
-ALTER TABLE `interview_questions` ADD `industry` varchar(255);

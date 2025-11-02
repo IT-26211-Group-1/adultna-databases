@@ -1,1 +1,0 @@
-ALTER TABLE `onboarding_questions` ADD `reason` varchar(255);
