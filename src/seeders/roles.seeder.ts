@@ -17,6 +17,8 @@ async function getDbConnection() {
 export async function seedRoles() {
   // ✅ must be exported
   const db = await getDbConnection();
+  console.log("Seeding roles...");
+
   const existing = await db.select().from(roles);
   if (existing.length === 0) {
     await db
@@ -26,5 +28,10 @@ export async function seedRoles() {
         { roleName: "technical_admin" },
         { roleName: "verifier_admin" },
       ]);
+    console.log("✓ Created roles: user, technical_admin, verifier_admin");
+  } else {
+    console.log("⊘ Roles already exist");
   }
+
+  console.log("✅ Roles seeded");
 }
