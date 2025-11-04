@@ -15,6 +15,13 @@
       "when": 1762135739799,
       "tag": "0001_blue_shinobi_shaw",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1762227976843,
+      "tag": "0002_breezy_azazel",
+      "breakpoints": true
     }
   ]
 }
