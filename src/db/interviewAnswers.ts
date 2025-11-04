@@ -6,6 +6,7 @@ import {
   int,
   decimal,
   json,
+  mysqlEnum,
 } from "drizzle-orm/mysql-core";
 import { sessionQuestions } from "./sessionQuestions";
 import { users } from "./users";
@@ -33,6 +34,11 @@ export const interviewAnswers = mysqlTable("interview_answers", {
 
   // Total weighted score (decimal with 1 decimal place) - kept in DB for queries/analytics
   totalScore: decimal("total_score", { precision: 3, scale: 1 }),
+
+  // Grading status
+  status: mysqlEnum("status", ["pending", "processing", "completed", "failed"])
+    .notNull()
+    .default("pending"),
 
   // Timestamps
   createdAt: timestamp("created_at").defaultNow().notNull(),
