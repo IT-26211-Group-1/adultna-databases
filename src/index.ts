@@ -19,6 +19,7 @@ export { interviewAnswers } from "./db/interviewAnswers";
 export { interviewQuestions } from "./db/interviewQuestions";
 export { interviewQuestionJobRoles } from "./db/interviewQuestionJobRoles";
 export { interviewSession } from "./db/interviewSession";
+export { interviewResults } from "./db/interviewResults";
 export { jobRole } from "./db/jobRole";
 export { loginAttempts } from "./db/loginAttempts";
 export { mockQuestions } from "./db/mockQuestions";
