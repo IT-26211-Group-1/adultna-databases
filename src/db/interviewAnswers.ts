@@ -39,6 +39,7 @@ export const interviewAnswers = mysqlTable("interview_answers", {
   status: mysqlEnum("status", ["pending", "processing", "completed", "failed"])
     .notNull()
     .default("pending"),
+  gradingProgress: int("grading_progress").notNull().default(0),
 
   // Timestamps
   createdAt: timestamp("created_at").defaultNow().notNull(),

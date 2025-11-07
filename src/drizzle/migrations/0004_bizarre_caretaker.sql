@@ -1,0 +1,1 @@
+ALTER TABLE `interview_answers` ADD `grading_progress` int DEFAULT 0 NOT NULL;
