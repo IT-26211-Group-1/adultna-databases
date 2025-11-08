@@ -50,6 +50,13 @@
       "when": 1762619882857,
       "tag": "0006_slippery_blackheart",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1762626574242,
+      "tag": "0007_early_omega_sentinel",
+      "breakpoints": true
     }
   ]
 }
