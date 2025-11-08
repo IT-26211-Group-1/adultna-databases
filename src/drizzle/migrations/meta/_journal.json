@@ -43,6 +43,13 @@
       "when": 1762611455509,
       "tag": "0005_tricky_pretty_boy",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1762619882857,
+      "tag": "0006_slippery_blackheart",
+      "breakpoints": true
     }
   ]
 }
