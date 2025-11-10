@@ -9,6 +9,7 @@ export const resumeContactInfo = mysqlTable("resume_contact_info", {
     .references(() => resumes.id, { onDelete: "cascade" }),
   firstName: varchar("first_name", { length: 100 }).notNull(),
   lastName: varchar("last_name", { length: 100 }).notNull(),
+  jobPosition: varchar("job_position", { length: 100 }),
   email: varchar("email", { length: 100 }).notNull(),
   phone: varchar("phone", { length: 20 }).notNull(),
   city: varchar("city", { length: 50 }),

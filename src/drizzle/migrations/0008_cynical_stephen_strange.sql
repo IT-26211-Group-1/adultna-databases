@@ -1,0 +1,1 @@
+ALTER TABLE `resume_contact_info` ADD `job_position` varchar(100);
