@@ -8,6 +8,7 @@ export { aiInteractions } from "./db/aiInteractions";
 export { answerOptions } from "./db/answerOptions";
 export { auditLogs } from "./db/auditLogs";
 export { coverLetters } from "./db/coverLetters";
+export { coverLetterSections } from "./db/coverLetterSections";
 export { documents } from "./db/documents";
 export { documentSources } from "./db/documentSources";
 export { features } from "./db/features";
