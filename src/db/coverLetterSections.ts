@@ -1,4 +1,4 @@
-import { mysqlTable, varchar, text, int, timestamp, mysqlEnum } from "drizzle-orm/mysql-core";
+import { mysqlTable, varchar, int, timestamp, mysqlEnum } from "drizzle-orm/mysql-core";
 import { coverLetters } from "./coverLetters";
 
 export const coverLetterSections = mysqlTable("cover_letter_sections", {
@@ -7,7 +7,7 @@ export const coverLetterSections = mysqlTable("cover_letter_sections", {
     .notNull()
     .references(() => coverLetters.id, { onDelete: "cascade" }),
   sectionType: mysqlEnum("section_type", ["intro", "body", "conclusion", "signature"]).notNull(),
-  content: text("content"),
+  s3ContentKey: varchar("s3_content_key", { length: 500 }).notNull(),
   order: int("order").notNull().default(0),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
