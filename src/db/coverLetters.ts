@@ -10,7 +10,7 @@ export const coverLetters = mysqlTable("cover_letters", {
   resumeId: varchar("resume_id", { length: 36 }).references(() => resumes.id),
   title: varchar("title", { length: 255 }).notNull(),
   status: varchar("status", { length: 20 }).notNull().default("draft"),
-  style: varchar("style", { length: 20 }).notNull().default("formal"),
+  tone: varchar("tone", { length: 20 }).notNull().default("professional"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().onUpdateNow().notNull(),
 });
