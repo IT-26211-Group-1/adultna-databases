@@ -1,0 +1,1 @@
+ALTER TABLE `cover_letter_sections` MODIFY COLUMN `section_type` enum('intro','body','conclusion','signature') NOT NULL;
