@@ -7,10 +7,10 @@ export const coverLetters = mysqlTable("cover_letters", {
   userId: varchar("user_id", { length: 36 })
     .notNull()
     .references(() => users.id),
-  resumeId: varchar("resume_id", { length: 36 }).references(() => resumes.id),
   title: varchar("title", { length: 255 }).notNull(),
   status: varchar("status", { length: 20 }).notNull().default("draft"),
   tone: varchar("tone", { length: 20 }).notNull().default("professional"),
+  s3ContentKey: varchar("s3_content_key", { length: 500 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().onUpdateNow().notNull(),
 });

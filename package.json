@@ -1,6 +1,6 @@
 {
   "name": "@it-26211-group-1/database",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "type": "module",
   "scripts": {
     "seed": "tsx src/seeders/index.ts",
