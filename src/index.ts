@@ -38,5 +38,6 @@ export { uploadedFiles } from "./db/uploadedFiles";
 export { userOnboardingResponse } from "./db/userOnboardingResponse";
 export { roadmap } from "./db/roadmap";
 export { milestones } from "./db/milestones";
+export { milestoneTasks } from "./db/milestoneTasks";
 export { fileboxFiles } from "./db/fileboxFiles";
 export { conversations } from "./db/conversations";
