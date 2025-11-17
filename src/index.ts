@@ -41,3 +41,11 @@ export { milestones } from "./db/milestones";
 export { milestoneTasks } from "./db/milestoneTasks";
 export { fileboxFiles } from "./db/fileboxFiles";
 export { conversations } from "./db/conversations";
+
+export type {
+  ProcessStep,
+  DocumentRequirement,
+  OfficeInfo,
+  GuideStatus,
+  GuideCategory,
+} from "./types/guide-types";
