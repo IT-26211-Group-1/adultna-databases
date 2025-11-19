@@ -1,0 +1,1 @@
+ALTER TABLE `government_process_guides` ADD `general_tips` json;

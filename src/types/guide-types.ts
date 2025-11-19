@@ -19,6 +19,12 @@ export type OfficeInfo = {
   oneTimeFee?: boolean;
 };
 
+export type GeneralTips = {
+  tipsToFollow?: string[];
+  tipsToAvoid?: string[];
+  importantReminders?: string[];
+};
+
 export type GuideStatus = "pending" | "accepted" | "rejected" | "to_revise";
 
 export type GuideCategory =

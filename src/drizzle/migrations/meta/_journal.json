@@ -120,6 +120,13 @@
       "when": 1763381516870,
       "tag": "0016_fuzzy_warbound",
       "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "5",
+      "when": 1763538561664,
+      "tag": "0017_typical_red_wolf",
+      "breakpoints": true
     }
   ]
 }

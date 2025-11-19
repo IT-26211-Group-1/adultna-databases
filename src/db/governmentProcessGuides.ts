@@ -8,7 +8,7 @@ import {
   mysqlEnum,
 } from "drizzle-orm/mysql-core";
 import { users } from "./users";
-import type { ProcessStep, DocumentRequirement, OfficeInfo } from "../types/guide-types";
+import type { ProcessStep, DocumentRequirement, OfficeInfo, GeneralTips } from "../types/guide-types";
 
 export const governmentProcessGuides = mysqlTable("government_process_guides", {
   id: varchar("id", { length: 36 }).primaryKey(),
@@ -29,6 +29,7 @@ export const governmentProcessGuides = mysqlTable("government_process_guides", {
   steps: json("steps").$type<ProcessStep[]>().notNull(),
   requirements: json("requirements").$type<DocumentRequirement[]>().notNull(),
   processingTime: varchar("processing_time", { length: 100 }).notNull(),
+  generalTips: json("general_tips").$type<GeneralTips>(),
 
   // Office information
   offices: json("offices").$type<OfficeInfo>().notNull(),
