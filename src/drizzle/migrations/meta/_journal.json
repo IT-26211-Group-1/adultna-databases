@@ -127,6 +127,13 @@
       "when": 1763538561664,
       "tag": "0017_typical_red_wolf",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "5",
+      "when": 1763714396579,
+      "tag": "0018_slow_roxanne_simpson",
+      "breakpoints": true
     }
   ]
 }
