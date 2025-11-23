@@ -4,7 +4,6 @@ export { userRoles } from "./db/userRoles";
 export { users } from "./db/users";
 export { emailOtps } from "./db/emailOtps";
 export { documentOtps } from "./db/documentOtps";
-export { aiInteractions } from "./db/aiInteractions";
 export { answerOptions } from "./db/answerOptions";
 export { auditLogs } from "./db/auditLogs";
 export { coverLetters } from "./db/coverLetters";
@@ -39,6 +38,7 @@ export { userOnboardingResponse } from "./db/userOnboardingResponse";
 export { roadmap } from "./db/roadmap";
 export { milestones } from "./db/milestones";
 export { milestoneTasks } from "./db/milestoneTasks";
+export { notifications } from "./db/notifications";
 export { fileboxFiles } from "./db/fileboxFiles";
 export { conversations } from "./db/conversations";
 
