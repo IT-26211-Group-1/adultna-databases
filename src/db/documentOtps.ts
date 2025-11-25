@@ -12,7 +12,7 @@ export const documentOtps = mysqlTable("document_otp", {
     .notNull()
     .references(() => uploadedFiles.id, { onDelete: "cascade" }),
   otp: varchar("otp", { length: 6 }).notNull(),
-  action: mysqlEnum("action", ["preview", "download", "delete"]).notNull().default("download"),
+  action: mysqlEnum("action", ["preview", "download", "delete", "rename", "unprotect"]).notNull().default("download"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   expiresAt: timestamp("expires_at").notNull(),
 });

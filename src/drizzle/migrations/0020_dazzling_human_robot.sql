@@ -1,0 +1,1 @@
+ALTER TABLE `document_otp` MODIFY COLUMN `action` enum('preview','download','delete','rename','unprotect') NOT NULL DEFAULT 'download';
