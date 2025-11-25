@@ -4,6 +4,7 @@ export { userRoles } from "./db/userRoles";
 export { users } from "./db/users";
 export { emailOtps } from "./db/emailOtps";
 export { documentOtps } from "./db/documentOtps";
+export { documentOtpAttempts } from "./db/documentOtpAttempts";
 export { answerOptions } from "./db/answerOptions";
 export { auditLogs } from "./db/auditLogs";
 export { coverLetters } from "./db/coverLetters";
