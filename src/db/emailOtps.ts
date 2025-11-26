@@ -1,4 +1,4 @@
-import { mysqlTable, varchar, timestamp } from "drizzle-orm/mysql-core";
+import { mysqlTable, varchar, timestamp, int } from "drizzle-orm/mysql-core";
 import { users } from "./users";
 
 export const emailOtps = mysqlTable("email_otp", {
@@ -7,6 +7,7 @@ export const emailOtps = mysqlTable("email_otp", {
     .notNull()
     .references(() => users.id),
   otp: varchar("otp", { length: 6 }).notNull(),
+  attempts: int("attempts").notNull().default(0),
   createdAt: timestamp("created_at").defaultNow(),
   expiresAt: timestamp("expires_at").notNull(),
 });

@@ -1,0 +1,1 @@
+ALTER TABLE `email_otp` ADD `attempts` int DEFAULT 0 NOT NULL;
