@@ -2,6 +2,7 @@ export { roles } from "./db/roles";
 export { userProfile } from "./db/userProfile";
 export { userRoles } from "./db/userRoles";
 export { users } from "./db/users";
+export { userStreaks } from "./db/userStreaks";
 export { emailOtps } from "./db/emailOtps";
 export { documentOtps } from "./db/documentOtps";
 export { documentOtpAttempts } from "./db/documentOtpAttempts";
