@@ -162,6 +162,13 @@
       "when": 1764152270565,
       "tag": "0022_solid_bishop",
       "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "5",
+      "when": 1764354408988,
+      "tag": "0023_tiresome_jack_murdock",
+      "breakpoints": true
     }
   ]
 }
