@@ -12,7 +12,7 @@ export const resumeContactInfo = mysqlTable("resume_contact_info", {
   jobPosition: varchar("job_position", { length: 100 }),
   email: varchar("email", { length: 100 }).notNull(),
   phone: varchar("phone", { length: 20 }).notNull(),
-  city: varchar("city", { length: 50 }),
+  city: varchar("city", { length: 80 }),
   region: varchar("region", { length: 100 }),
   birthDate: date("birth_date"),
   linkedin: varchar("linkedin", { length: 255 }),
