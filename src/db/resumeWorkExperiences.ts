@@ -11,6 +11,6 @@ export const resumeWorkExperiences = mysqlTable("resume_work_experiences", {
   startDate: date("start_date"),
   endDate: date("end_date"),
   isCurrentlyWorkingHere: boolean("is_currently_working_here").default(false),
-  description: varchar("description", { length: 800 }),
+  description: text("description"),
   order: int("order").notNull().default(0),
 });
