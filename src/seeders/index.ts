@@ -1,11 +1,13 @@
 import { seedRoles } from "./roles.seeder.js"; // note the .js extension
 import { seedAdminUsers } from "./admin-users.seeder.js";
 import { seedReportStatus } from "./report-status.seeder.js";
+import { seedFeatures } from "./features.seeder.js";
 
 async function runAllSeeders() {
   console.log("🌱 Starting database seeding...\n");
 
   await seedRoles();
+  await seedFeatures();
   await seedReportStatus();
   await seedAdminUsers();
 
