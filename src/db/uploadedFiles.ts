@@ -21,4 +21,5 @@ export const uploadedFiles = mysqlTable("uploaded_files", {
   isSecure: boolean("is_secure").default(false).notNull(),
   uploadedAt: timestamp("uploaded_at").defaultNow().notNull(),
   version: int("version").default(1),
+  deletedAt: timestamp("deleted_at"),
 });
