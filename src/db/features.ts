@@ -5,11 +5,18 @@ export const features = mysqlTable("features", {
   name: varchar("name", {
     length: 255,
     enum: [
-      "govmap",
-      "filebox",
-      "process_guides",
+      "dashboard",
+      "roadmap",
       "ai_gabay_agent",
+      "gov_guides",
+      "filebox",
+      "resume_builder",
+      "cover_letter",
       "mock_interview_coach",
+      "job_board",
+      "profile",
+      "general",
     ],
   }).notNull(),
+  description: varchar("description", { length: 255 }),
 });
