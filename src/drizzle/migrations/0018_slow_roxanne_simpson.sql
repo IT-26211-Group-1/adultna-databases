@@ -1,1 +1,0 @@
-ALTER TABLE `user_profile` ADD `profile_picture_url` varchar(500);

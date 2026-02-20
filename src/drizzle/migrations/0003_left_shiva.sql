@@ -1,1 +1,0 @@
-ALTER TABLE `interview_answers` ADD `status` enum('pending','processing','completed','failed') DEFAULT 'pending' NOT NULL;
